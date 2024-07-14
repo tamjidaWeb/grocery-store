@@ -19,7 +19,7 @@
     border: none;
     text-decoration: none;
     text-transform: capitalize;
-    transition: all 2s;
+    transition: all 1s;
 }
 html{
     font-size: 62.5%;
@@ -29,6 +29,20 @@ html{
 }
 body{
     background: #eee;
+}
+.btn{
+    margin-top: 1rem;
+    display: inline-block;
+    padding: .8rem 3rem;
+    font-size: 1.5rem;
+    border: .2px solid var(--black);
+    border-radius: .5rem;
+    cursor: pointer;
+
+}
+.btn:hover{
+    background: var(--green);
+    color: #fff;
 }
 .header{
     border: 1px solid black;
@@ -85,7 +99,7 @@ body{
     position: absolute;
     top: 110%;
     right: -110%;
-    width: 40rem;
+    width: 50rem;
     height: 4rem;
     background: #fff;
     border-radius: .5rem;
@@ -116,3 +130,126 @@ body{
 .header .search-form label:hover{
     color: var(--green);
 }
+.header .shopping-cart{
+    position: absolute;
+    top: 110%;
+    right: -110%;
+    padding: 1rem;
+    border: 1px solid;
+    border-radius: .5rem;
+    box-shadow: var(--box-shadow);
+    width: 35rem;
+    background: #fff;
+}
+.header .shopping-cart.active
+{
+    right: 2rem;
+    transition: all .4s linear;
+}
+
+.header .shopping-cart .box {
+    border: 0px solid;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    position: relative;
+    margin: 1rem 0;
+
+}
+.header .shopping-cart .box img{
+    height: 10rem;
+
+}
+.header .shopping-cart .box .fa-trash{
+    font-size: 2rem;
+    position: absolute;
+    top: 50%;
+    right: 2rem;
+    cursor: pointer;
+    color: var(--light-color);
+    transform: translateY(-50%);
+}
+.header .shopping-cart .box .fa-trash:hover{
+    color: var(--green);
+}
+.header .shopping-cart .box .content h3{
+    color: var(--black);
+    font-size: 1.7rem;
+    padding-bottom: 1rem;
+}
+
+.header .shopping-cart .box .content span{
+    color: var(--light-color);
+    font-size: 1.4rem;
+    padding-bottom: 1rem;
+}
+
+.header .shopping-cart .box .content .quantity{
+    padding-left: 1rem;
+}
+
+.header .shopping-cart .total{
+    font-size: 2.5rem;
+    padding: 1rem 0;
+    text-align: center;
+
+}
+.header .shopping-cart .btn{
+    display: block;
+    text-align: center;
+    margin: 1rem 0;
+}
+.header .login-form{
+    border: 0px solid;
+    position: absolute;
+    width: 35rem;
+    top: 110%;
+    right: -110%;
+    box-shadow: var(--box-shadow);
+    padding: 2rem;
+    border-radius: .5rem;
+    background: #fff;
+    text-align: center;
+}
+.header .login-form.active{
+    right: 2rem;
+    transition: .4s linear;
+}
+.header .login-form h3{
+    font-size: 2rem;
+    text-transform: uppercase;
+    color: var(--black);
+}
+.header .login-form .box{
+    width: 100%;
+    border: 0px solid;
+    margin: .7rem 0;
+    background: #eee;
+    border-radius: .5rem;
+    padding: 1rem;
+    font-size: 1.6rem;
+    color: var(--black);
+    text-transform: none;
+}
+.header .login-form p{
+    font-size: 1.4rem;
+    padding: .5rem 0;
+}
+.header .login-form p a{
+    padding: .5rem 0;
+    color: var(--green);
+    text-decoration: underline;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
