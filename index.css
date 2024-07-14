@@ -1,8 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+:root{
+
+    --green:green;
+    --black:#130f40;
+    --light-color:#666;
+    --box-shadow:0 .1rem 1rem rgba(0,0,0.1);
+    --border: 1rem  solid rgba(0,0,0.1);
+    --outline:.1rem solid rgba(0,0,0.1);
+
+}
+
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: all 2s;
 }
-html, body{
-    
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    scroll-padding-top: 7rem;
+}
+body{
+    background: #eee;
+}
+.header{
+    border: 1px solid black;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem 9%;
+    background: #fff;
+    box-shadow: var(--box-shadow);
+
+}
+.header .logo{
+    font-size: 2.5rem;
+    font-weight: bolder;
+}
+.header .logo i{
+    color: var(--green);
+}
+.header .navbar a{
+    font-size: 1.7rem;
+    margin: 0 1rem;
+}
+.header .navbar a:hover{
+    color: var(--green);
+}
+.header .icons div{
+    height: 4.5rem;
+    width: 4.5rem;
+    border: 0px solid red;
+    line-height: 4.5rem;
+    border-radius: .5rem;
+    background: #eee;
+    color: var(--black);
+    font-size: 2rem;
+    margin-right: .3rem;
+   text-align: center;
+   cursor: pointer;
+
+}
+.header .icons div:hover{
+    background: var(--green);
+    color: white;
+}
+#menu-btn{
+    display: none;
+}
+
+.header .search-form{
+    border: 1px solid ;
 }
