@@ -4,7 +4,7 @@
     --green:green;
     --black:#130f40;
     --light-color:#666;
-    --box-shadow:0 .1rem 1rem rgba(0,0,0.1);
+    --box-shadow:0 .5rem 1.5rem rgba(0,0,0,.1);
     --border: 1rem  solid rgba(0,0,0.1);
     --outline:.1rem solid rgba(0,0,0.1);
 
@@ -315,9 +315,47 @@ line-height: 1.8;
 
 }
 
+/* ------------features--------- */
+.features .box-container {
+    border: 0px solid;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+    gap: 1.5rem;
+   
+}
+.features .box-container .box{
+    border: 0px solid;
+    padding: 3rem 2rem;
+    background: #fff;
+    outline: var(--outline);
+    outline-offset: -1rem;
+    box-shadow: var(--box-shadow);
+    text-align: center;
+}
+.features .box-container .box:hover{
+    box-shadow: 1px 1px 10px 4px var(--green);
+}
+
+.features .box-container .box img{
+    margin: 1rem 0;
+    height: 15rem;
+}
+.features .box-container .box h3{
+    font-size: 2.5rem;
+    line-height: 1.8;
+    color: var(--black);
+}
+.features .box-container .box p{
+    font-size:1.5rem ;
+    line-height: 1.8;
+    color: var(--light-color);
+    padding: 1rem 0;
+}
 
 
 
+
+/* ------------features--------- */
 
 
 
