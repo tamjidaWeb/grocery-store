@@ -94,6 +94,12 @@ body{
     display: none;
 }
 
+
+.header .navbar.active{
+    right: 2rem;
+    transition: .4s linear;
+}
+
 .header .search-form{
     border: 0px solid ;
     position: absolute;
@@ -289,14 +295,28 @@ body{
 
 @media (max-width:768px)
 {
+    #menu-btn{
+        display: inline-block;
+    }
+
+    .header .search-form{
+        width: 92.5%;
+        height: 5rem;
+    }
    .header .navbar{
     position: absolute;
     top: 110%;
-    right: 2rem;
+    right: -110%;
     width: 30rem;
-box-shadow: var(--box-shadow);
-border-radius: .5rem;
-border-color: #fff;
+    box-shadow: var(--box-shadow);
+    border-radius: .5rem;
+    background: #fff;
+
+   }
+   .header .navbar a{
+    font-size: 2rem;
+    margin: 2rem 2.5rem;
+    display: block;
 
    }
 }
