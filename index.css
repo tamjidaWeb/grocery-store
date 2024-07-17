@@ -5,7 +5,7 @@
     --black:#130f40;
     --light-color:#666;
     --box-shadow:0 .5rem 1.5rem rgba(0,0,0,.1);
-    --border: 1rem  solid rgba(0,0,0.1);
+    --border: .1rem  solid rgba(0,0,0.1);
     --outline:.1rem solid rgba(0,0,0.1);
 
 }
@@ -400,11 +400,152 @@ line-height: 1.8;
 
 
 
+.categories .box-container {
+    border: 0px solid;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 1.5rem;
+   
+}
+
+.categories .box-container .box{
+    padding: 3rem 0;
+    background: #fff;
+    border-radius: .5rem;
+    text-align: center;
+    outline-offset: -1rem;
+    outline: var(--outline);
+}
+.categories .box-container .box:hover{
+
+box-shadow: 1px 1px 10px 4px var(--green);
+
+}
+.categories .box-container .box img{
+    margin: 1rem 0;
+    height: 15rem;
+}
+.categories .box-container .box h3{
+    font-size: 2rem;
+    line-height: 1.8;
+    color: var(--light-color);
+    padding: 1rem 0;
+}
+.categories .box-container .box p{
+    font-size: 1.7rem;
+}
+
+/* ----------------review---------------- */
+.review .review-slider{
+    border: 0px solid;
+    padding: 2rem;
+}
+.review .review-slider .box{
+    border: 0px solid red;
+    background: #fff;
+    border-radius: .5rem;
+    text-align: center;
+    padding: 3rem 2rem;
+    outline-offset: -1rem;
+    outline: var(--outline);
+    box-shadow: var(--box-shadow);
+    transition: .2s linear;
+    /* padding: 1rem 0; */
+
+}
+.review .review-slider .box:hover{
+box-shadow: 1px 1px 10px 4px var(--green);
+}
+.review .review-slider .box img{
+    height: 10rem;
+    width: 10rem;
+    border-radius: 50%;
+}
+.review .review-slider .box p{
+    padding: 1rem 0;
+    line-height: 1.8;
+    color: var(--light-color);
+    font-size:1.5rem ;
+}
+
+.review .review-slider .box h3{
+    padding: .5rem 0;
+    line-height: 1.8;
+    color: var(--black);
+    font-size:2.5rem ;
+}
+.review .review-slider .box .stars i{
+   
+    line-height: 1.8;
+    color: orange;
+    font-size:1.7rem ;
+}
 
 
 
+/* ------------blogs----------- */
+
+.blogs .box-container {
+    border: 0px solid;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 1.5rem;
+   
+}
+
+.blogs .box-container .box{
 
 
+    overflow: hidden;
+    border-radius: .5rem;
+    box-shadow: var(--box-shadow);
+    background: #fff;
+}
+.blogs .box-container .box img{
+    height:25rem;
+    width: 100%;
+    object-fit: cover;
+}
+.blogs .box-container .box .content{
+    padding: 2rem;
+}
+
+.blogs .box-container .box .content .icons{
+    padding: 2rem;
+   
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5rem;
+    border-bottom: var(--border);
+    
+}
+.blogs .box-container .box .content .icons a{
+    color: var(--light-color);
+    font-size: 1.5rem;
+}
+
+.blogs .box-container .box .content .icons i{
+    color: var(--green);
+    padding-right: 1rem;
+}
+.blogs .box-container .box .content .icons a:hover{
+    color: var(--black);
+}
+
+.blogs .box-container .box .content h3{
+    line-height: 1.8;
+    color: var(--black);
+    font-size: 2.2rem;
+    padding: .5rem 0;
+}
+.blogs .box-container .box .content p{
+    line-height: 1.8;
+    color: var(--light-color);
+    font-size: 1.5rem;
+    padding: .5rem 0;
+}
 
 
 
