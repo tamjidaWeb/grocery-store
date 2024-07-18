@@ -555,7 +555,7 @@ box-shadow: 1px 1px 10px 4px var(--green);
 .footer .box-container{
     border: 0px solid;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(26rem, 1fr));
     gap: 1.5rem;
    
 }
@@ -565,19 +565,68 @@ box-shadow: 1px 1px 10px 4px var(--green);
     padding: 1rem 0;
 }
 .footer .box-container .box h3 i{
-    color: green;
+    color: var(--green);
 }
-.footer .box-container .box a{
+.footer .box-container .box .links{
+    display: block;
     font-size: 1.5rem;
     color: var(--light-color);
     padding: 1rem 0;
 }
 
 .footer .box-container .box p{
-    font-size: 1.8rem;
+    font-size: 1.5rem;
     line-height: 1.8;
+    padding: 1rem 0;
+    color: var(--light-color);
 }
+.footer .box-container .box .links:hover i{
+    padding-right: 2rem;
+}
+.footer .box-container .box  .links i{
+    color: var(--green);
+}
+.footer .box-container .box .share a i{
+    height: 4rem;
+    width: 4rem;
+    border: 0px solid;
+    line-height: 4rem;
+    border-radius: .5rem;
+    font-size: 2rem;
+    color: var(--black);
+    margin-left: .2rem;
+    text-align: center;
+}
+.footer .box-container .box .share a i:hover{
+    background: var(--green);
+    color: #fff;
+}
+.footer .box-container .box .email{
+    margin: .7rem 0;
+    background: #eee;
+    padding: 1rem;
+    border-radius: .5rem;
+    color: #fff;
+    text-transform: none;
+    width: 100%;
+}
+.footer .box-container .box .payment-img{
+    margin-top: 2rem;
+    height: 3rem;
+}
+.footer .credit{
+    text-align: center;
+    margin-top: 2rem;
+    font-size: 2rem;
+    padding: 2.5rem;
+    color: var(--black);
+    border-top: var(--border);
+    border-color: #999;
 
+}
+.footer .credit span{
+    color: var(--green);
+}
 
 
 
@@ -668,6 +717,17 @@ box-shadow: 1px 1px 10px 4px var(--green);
     }
     .heading{
         font-size: 2.5rem;
+    }
+    .footer {
+        text-align: center;
+        
+    }
+    .footer .box-container{
+        border: 0px solid;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+        gap: 1.5rem;
+       
     }
 }
 
